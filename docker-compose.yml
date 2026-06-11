@@ -1,0 +1,39 @@
+services:
+  backend:
+    build: ./backend
+    container_name: wealth_os_live_fixed_backend
+    environment:
+      CORS_ORIGINS: http://localhost:3000,http://127.0.0.1:3000,http://localhost:3010,http://127.0.0.1:3010,http://localhost:3011,http://127.0.0.1:3011,http://localhost:8080,http://127.0.0.1:8080
+      USE_LIVE_DATA: "true"
+
+      # Optional market/news APIs
+      FINNHUB_API_KEY: ""
+      NEWSAPI_KEY: ""
+      ALPHA_VANTAGE_API_KEY: ""
+
+      # Optional private broker APIs. Add your own read-only keys.
+      TRADING212_API_KEY: ""
+      COINBASE_API_KEY: ""
+      COINBASE_API_SECRET: ""
+      ZERODHA_API_KEY: ""
+      ZERODHA_ACCESS_TOKEN: ""
+      GROWW_API_KEY: ""
+      SCALABLE_API_KEY: ""
+      MFCENTRAL_API_KEY: ""
+      IBKR_BASE_URL: "https://localhost:5000/v1/api"
+      IBKR_ENABLED: "false"
+
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/data:/app/data
+
+  frontend:
+    image: nginx:alpine
+    container_name: wealth_os_live_fixed_frontend
+    volumes:
+      - ./frontend:/usr/share/nginx/html:ro
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend

@@ -1,0 +1,28 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.Python
+
+# ---- App data (user portfolio state — do not commit) ----
+backend/data/state.json
+backend/data/*.json
+!backend/data/.gitkeep
+
+# ---- Secrets / env ----
+.env
+.env.*
+*.local
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# ---- Logs ----
+*.log
