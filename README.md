@@ -67,21 +67,7 @@ Most people's wealth lives in **5–10 disconnected places**: a domestic broker,
 
 ---
 
-## 📸 Screenshots
 
-> Add your own screenshots to [`docs/screenshots/`](./docs/screenshots/) and embed them here. Suggested shots: **Mission Control · Live Markets · AI Desk · Asset Detail · About Me · the profile lock screen.** (See [`docs/screenshots/README.md`](./docs/screenshots/README.md) for file-name conventions.)
-
-<!-- Once you drop images in docs/screenshots/, delete this comment and uncomment the table:
-| Mission Control | Live Markets |
-|---|---|
-| ![Mission Control](docs/screenshots/mission-control.png) | ![Live Markets](docs/screenshots/live-markets.png) |
-
-| AI Desk | Asset Detail |
-|---|---|
-| ![AI Desk](docs/screenshots/ai-desk.png) | ![Asset Detail](docs/screenshots/asset-detail.png) |
--->
-
----
 
 ## 🖥 Screens & Features
 
